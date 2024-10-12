@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { HelloComponent } from './hello.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { CommonModule } from '@angular/common';
+import { TesteTecnicoComponent } from '../teste-tecnico/feature/teste-tecnico/teste-tecnico.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HelloComponent, MatExpansionModule],
+  imports: [CommonModule, HelloComponent, MatExpansionModule, TesteTecnicoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

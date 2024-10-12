@@ -1,0 +1,69 @@
+<div class="container">
+    <mat-card appearance="outlined">
+        <mat-card-header>
+            <mat-card-title> Teste Técnico</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form [formGroup]="formGroupEndereco" (ngSubmit)="onSubmit()" class="example-form" #formDirective="ngForm">
+                <div class="inputs">
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>CEP</mat-label>
+                        <input matInput formControlName="cep" matInput mask="00000-000"/>
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>Logradouro</mat-label>
+                        <input matInput formControlName="logradouro" matInput />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>Complemento</mat-label>
+                        <input matInput formControlName="complemento" matInput mask="separator.3" thousandSeparator="." />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>Unidade</mat-label>
+                        <input matInput formControlName="unidade" matInput />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>Bairro</mat-label>
+                        <input matInput formControlName="bairro" matInput />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>Localidade</mat-label>
+                        <input matInput formControlName="localidade" matInput />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>UF</mat-label>
+                        <input matInput formControlName="uf" matInput maxlength="2" />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>Estado</mat-label>
+                        <input matInput formControlName="estado" matInput />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>Regiao</mat-label>
+                        <input matInput formControlName="regiao" matInput />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>GIA</mat-label>
+                        <input matInput formControlName="gia" matInput />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>DDD</mat-label>
+                        <input matInput formControlName="ddd" matInput />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>IBGE</mat-label>
+                        <input matInput formControlName="ibge" matInput />
+                    </mat-form-field>
+                    <mat-form-field color="accent" class="example-full-width" appearance="outline">
+                        <mat-label>SIAFI</mat-label>
+                        <input matInput formControlName="siafi" matInput />
+                    </mat-form-field>
+                </div>
+                <div class="inputs">
+                    <button mat-stroked-button [disabled]="formGroupEndereco.invalid">Salvar</button>
+                    <!-- <button mat-stroked-button>Salvar</button> -->
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
